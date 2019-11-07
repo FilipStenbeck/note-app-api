@@ -6,6 +6,33 @@ const db = require('./db');
 const resolvers = {
     Query: {
         notes: () => db.get()
+    },
+    Mutation: {
+        addNote: (parent, args) => {
+            console.log(args);
+
+            const id = require('crypto')
+                .randomBytes(10)
+                .toString('hex');
+            const note = {
+                id,
+                title: args.title,
+                body: args.body
+            };
+            db.push(id, note);
+            return note;
+        },
+        saveNote: (parent, args) => {
+            console.log(args);
+
+            const note = {
+                id: args.id,
+                title: args.title,
+                body: args.body
+            };
+            db.push(note.id, note);
+            return note;
+        }
     }
 };
 
