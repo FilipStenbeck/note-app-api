@@ -1767,7 +1767,7 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@^0.5.0, mkdirp@^0.5.1:
+mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
   resolved "http://hi3gprivatenpm.azurewebsites.net/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -1829,6 +1829,13 @@ node-fetch@^2.1.2, node-fetch@^2.2.0:
   version "2.6.0"
   resolved "http://hi3gprivatenpm.azurewebsites.net/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
+node-json-db@^1.0.2:
+  version "1.0.2"
+  resolved "http://hi3gprivatenpm.azurewebsites.net/node-json-db/-/node-json-db-1.0.2.tgz#d1d1a2014667fa8aca8dd42666ebea00ed864888"
+  integrity sha512-4TYcJRT57cl7mAL2lLI+k5eE9sz9c0HDq9HBtBuSn7UJSuJIpKci8nceKWcFbgESx18X5TTydmvSYvWY2fKqew==
+  dependencies:
+    mkdirp "0.5.x"
 
 node-pre-gyp@^0.12.0:
   version "0.12.0"

@@ -1,4 +1,4 @@
-const Notes = [
+module.exports = [
     {
         id: 0,
         title: 'A important note',
@@ -13,10 +13,14 @@ const Notes = [
     },
     {
         id: 2,
-        title: 'A third other note',
+        title: 'A third note',
         body:
             'Ne vis graeco dictas. Nam aeque equidem facilisi te, nec eu oratio equidem singulis. Mel unum possim vocent ei. Eos nemore euripidis ea, ne inani regione alienum his. Ex esse justo est, aliquip eligendi sit ut, an vis alii ferri viderer. '
+    },
+    {
+        id: 3,
+        title: 'A final note',
+        body:
+            'Nam aeque equidem facilisi te, nec eu oratio equidem singulis. Mel unum possim vocent ei. Eos nemore euripidis ea, ne inani regione alienum his. Ex esse justo est, aliquip eligendi sit ut, an vis alii ferri viderer. '
     }
 ];
-
-module.exports = Notes;
