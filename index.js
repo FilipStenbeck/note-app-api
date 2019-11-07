@@ -40,7 +40,7 @@ const server = new ApolloServer({ typeDefs, resolvers });
 
 //Pre-populate the db with some notes
 notes.map(note => db.push(note.id, note));
-console.log(db.get());
+console.log(`Loaded ${db.get().length} items`);
 
 server.listen().then(({ url }) => {
     console.log(`🚀  Server ready at ${url}`);
