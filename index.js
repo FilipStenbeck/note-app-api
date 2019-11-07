@@ -9,8 +9,6 @@ const resolvers = {
     },
     Mutation: {
         addNote: (parent, args) => {
-            console.log(args);
-
             const id = require('crypto')
                 .randomBytes(10)
                 .toString('hex');
@@ -23,8 +21,6 @@ const resolvers = {
             return note;
         },
         saveNote: (parent, args) => {
-            console.log(args);
-
             const note = {
                 id: args.id,
                 title: args.title,
@@ -32,6 +28,10 @@ const resolvers = {
             };
             db.push(note.id, note);
             return note;
+        },
+        deleteNote: (parent, args) => {
+            db.delete(args.id);
+            return { status: '200', message: 'ok' };
         }
     }
 };

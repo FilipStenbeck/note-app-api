@@ -16,9 +16,14 @@ const typeDefs = gql`
         body: String
     }
 
+    type Message {
+        status: String
+        message: String
+    }
     type Mutation {
         saveNote(id: String, title: String, body: String): Note
         addNote(title: String, body: String): Note
+        deleteNote(id: String): Message
     }
 `;
 
