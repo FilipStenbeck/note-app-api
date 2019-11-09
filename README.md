@@ -35,14 +35,6 @@ yarn dev
 
 Below is the detail run the application in production.
 
-### ENVIRONMENT variables
-The following environment variables is used in ttha application
-
-- **REACT_APP_API_ROOT** : url to API root (Example http://localhost:4000)
-- **REACT_APP_ROOT** : url to APP root  (Example http://localhost:3000)
-
-When starting the application using _yarn start_ or _yarn dev_ these variables are set for you and you do not need to set them.
-
 ### Run
 
 To start the application: 
