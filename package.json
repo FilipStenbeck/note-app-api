@@ -1,6 +1,6 @@
 {
     "name": "note-app-api",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Api for note app",
     "main": "index.js",
     "scripts": {
