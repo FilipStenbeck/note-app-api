@@ -6,7 +6,7 @@
     "scripts": {
         "start": "node index.js",
         "dev": "nodemon --ignore notesDB.json index.js",
-        "docker:build": "docker build . -t note-app-api:latest",
+        "docker:build": "docker build . -t filipstenbeck/note-app-api:latest",
         "docker:run": "docker run -d -p 4000:4000 -t note-app-api:latest",
         "test": "jest"
     },
