@@ -11,15 +11,15 @@ This is the backend API for [**The Note taking application**](https://github.com
 
 ### Architecture
 
-The applications consist of a **Apollo GraphQL** application and a [**React application**](https://github.com/FilipStenbeck/note-app).
+The applications consist of a **Apollo GraphQL** application and a [**React application**](https://github.com/FilipStenbeck/note-app). This is tha API. It stores/fetches notes from a very simple dile based database (I would not use this kind of DB in anything real)
 
 
 ### Dependencies (major)
 
 List of major libraries and tools:
 
--   apollo-server
--   node-json-db
+-   [Apollo GraphQL](https://github.com/apollographql)
+-   [node-json-db](https://github.com/Belphemur/node-json-db)
 
 ## How to use
 
